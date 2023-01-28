@@ -15,7 +15,7 @@
 
 ## Unified Modeling Language: 
 
-![Capture](https://user-images.githubusercontent.com/crisgahur/OOPExerciseTwo/dev/OOPExercise.png)
+![Capture](https://github.com/crisgahur/OOPExerciseTwo/blob/develop/OOPExercise.png)
 
 ## What happen when I execute this project?
 - Humming class is requested:
