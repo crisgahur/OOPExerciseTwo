@@ -39,10 +39,7 @@ public class Humming extends Bird implements Death {
     }
 
     public Humming(AnimalModel localVariableAnimalModel) {
-        
        globalVariableAnimalModel = localVariableAnimalModel;
-               
-
     }
 
 }
