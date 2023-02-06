@@ -38,7 +38,3 @@ In review for the manager. Last update 27/01/2023. No bugs detected.
 
 ## Authors.
 Cristian Gallego.
-
-
-
-

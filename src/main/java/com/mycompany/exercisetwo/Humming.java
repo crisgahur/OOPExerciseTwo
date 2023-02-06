@@ -9,6 +9,8 @@ import java.time.Period;
  */
 public class Humming extends Bird implements Death {
 
+    public AnimalModel globalVariableAnimalModel;
+
     @Override
     public void sleep() {
         System.out.println("The humming usually sleep few hours");
@@ -18,8 +20,7 @@ public class Humming extends Bird implements Death {
     public String die(LocalDate born, LocalDate die, String deathCause) {
 
         Period period = Period.between(born, die);
-
-        return "The date of it's die is: " + die + ", lived: " + period.getYears() + " years, and the death     cause was: " + deathCause;
+        return "The date of it's die is: " + die + ", lived: " + period.getYears() + " years, and the death cause was: " + deathCause;
 
     }
 
@@ -28,22 +29,19 @@ public class Humming extends Bird implements Death {
         return couldReincarnate;
     }
 
-    public AnimalModel globalVariableAnimalModel;
-
     public Humming() {
-
-        AnimalModel x = new AnimalModel();
-
-        globalVariableAnimalModel = x;
-
+        AnimalModel localVariableAnimalModel = new AnimalModel();
+        localVariableAnimalModel.color = "verde";
+        localVariableAnimalModel.isDomesticable = false;
+        localVariableAnimalModel.environment = "tropical";
+        localVariableAnimalModel.kind = "bird";
+        localVariableAnimalModel.legs = 2;
     }
 
-    public Humming(AnimalModel globalVariableAnimalModel) {
-
-        globalVariableAnimalModel.color = "verde";
-        globalVariableAnimalModel.isDomesticable = false;
-        globalVariableAnimalModel.environment = "tropical";
-        globalVariableAnimalModel.kind = "bird";
+    public Humming(AnimalModel localVariableAnimalModel) {
+        
+       globalVariableAnimalModel = localVariableAnimalModel;
+               
 
     }
 

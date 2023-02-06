@@ -10,5 +10,6 @@ public class AnimalModel {
     public String color;
     public String environment;
     public Boolean isDomesticable;
+    public int legs;
     
 }
