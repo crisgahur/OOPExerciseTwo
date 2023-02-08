@@ -7,9 +7,17 @@ package com.mycompany.exercisetwo;
 public class AnimalModel {
     
     public String kind;
-    public String color;
+    private String color;
     public String environment;
     public Boolean isDomesticable;
     public int legs;
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
     
 }
