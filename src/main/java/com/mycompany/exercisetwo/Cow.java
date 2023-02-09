@@ -31,10 +31,10 @@ public class Cow extends Mammalian implements Death {
     public Cow() {
         AnimalModel localVariableAnimalModel = new AnimalModel();
         localVariableAnimalModel.setColor("White and black");
-        localVariableAnimalModel.environment = "Countryside";
-        localVariableAnimalModel.kind = "Mammalian";
-        localVariableAnimalModel.isDomesticable = true;
-        localVariableAnimalModel.legs = 4;
+        localVariableAnimalModel.setEnvironment("Countryside"); ;
+        localVariableAnimalModel.setKind("Mammalian");
+        localVariableAnimalModel.setIsDomesticable(Boolean.TRUE);
+        localVariableAnimalModel.setLegs(4);
     }
 
 }

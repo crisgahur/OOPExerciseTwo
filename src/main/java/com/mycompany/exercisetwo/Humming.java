@@ -32,10 +32,10 @@ public class Humming extends Bird implements Death {
     public Humming() {
         AnimalModel localVariableAnimalModel = new AnimalModel();
         localVariableAnimalModel.setColor("verde");
-        localVariableAnimalModel.isDomesticable = false;
-        localVariableAnimalModel.environment = "tropical";
-        localVariableAnimalModel.kind = "bird";
-        localVariableAnimalModel.legs = 2;
+        localVariableAnimalModel.setIsDomesticable(false);
+        localVariableAnimalModel.setEnvironment("tropical");
+        localVariableAnimalModel.setKind("bird");
+        localVariableAnimalModel.setLegs(2);
     }
 
     public Humming(AnimalModel localVariableAnimalModel) {
